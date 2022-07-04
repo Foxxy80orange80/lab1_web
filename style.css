@@ -1,0 +1,23 @@
+table{
+    border: 1;
+    /* cellpadding:0; */
+    width: 100%;
+
+}
+
+.hat{
+    font-style: italic; /*курсивный текст*/
+    font-size: large;
+    color:chocolate;
+    right: 2000;
+    text-align: right;
+    
+}
+
+.boots{
+    text-align:center;
+    
+}
+img{
+    /* width: 300px; */
+}
