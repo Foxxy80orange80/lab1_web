@@ -1,3 +1,6 @@
+
+
+
 table{
     border: 1;
     /* cellpadding:0; */
@@ -5,19 +8,27 @@ table{
 
 }
 
+
+
 .hat{
     font-style: italic; /*курсивный текст*/
     font-size: large;
-    color:chocolate;
+    color: black;
     right: 2000;
-    text-align: right;
+    text-align: center;
+    
     
 }
+
+
 
 .boots{
     text-align:center;
     
 }
+
+
+/* 
 img{
-    /* width: 300px; */
-}
+    width: 300px;
+} */

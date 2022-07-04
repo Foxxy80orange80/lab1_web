@@ -8,17 +8,68 @@
     <title>LAB-1-WEB</title>
 </head>
 <body>
+
+    <!-- таблица -->
     <table border="1" cellpadding="0" cellspacing="0" width="100%">
+
+        <!-- шапка -->
         <tr>
             <th class="hat" colspan="3"> Емельянов Дмитрий Сергеевич<br>Группа Р3108<br>Вариант №8 </th>
         </tr>
-            <th >График</th>
-            <th >Поля ввода координат</th>
-            <th >Таблица результатов</th>
+
+        <!-- названия столбцов -->
+        <th >График</th>
+        <th >Поля ввода координат</th>
+        <th >Таблица результатов</th>
+
+        <!-- содержимое столбцов -->
         <tr>
-            <td> <img class="areas" src="areas.png" alt="Фото графика"></td>
+            <td> <img class="areas" src="areas.png" alt="Фото графика"></td>    <!-- график -->
+            
+            <td>
+                <form name="input_coordinates" method="post" action=""> <!-- координаты -->
+
+                    <p><b>Выберите координату Х:</b><br>
+                        <input type="radio" name="x" value="-2"> -2<br>
+                        <input type="radio" name="x" value="-1.5"> -1.5<br>
+                        <input type="radio" name="x" value="-1"> -1<br>
+                        <input type="radio" name="x" value="0.5"> -0.5<br>
+                        <input type="radio" name="x" value="0"> 0<br>
+                        <input type="radio" name="x" value="0.5"> 0.5<br>
+                        <input type="radio" name="x" value="1"> 1<br>
+                        <input type="radio" name="x" value="1.5"> 1.5<br>
+                        <input type="radio" name="x" value="2"> 2<br>
+                    </p>
+
+                    <p><b>Введите координату Y:</b><br>
+                        <input type="text" size="19">
+                    </p>
+                    
+                    <p><b>Введите параметр R:</b><br>
+                        <input type="text" size="19">
+                    </p>
+
+                </form>
+            </td>   
+
+
+<!-- факт попадания|текущее время |время работы скрипта -->
+            <td>   <!-- результаты --> 
+                <table border="1" cellpadding="0" cellspacing="0" width="100%">
+
+                    <th >Факт попадания</th>
+                    <th >Текущее время</th>
+                    <th >Время работы скрипта</th>
+                    <tr>
+                        <td>Преположим попал</td>
+                        <td>Десятнадцать минут Второго</td>
+                        <td>Одна секундочка</td>
+                    </tr>
+                </table>
+            </td>
         </tr>
 
+        <!-- низ -->
         <tr>
             <td class="boots" colspan="3">ИТМО, сентябрь 2022 </td>
         </tr>
