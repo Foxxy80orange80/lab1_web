@@ -27,27 +27,31 @@
             <td> <img class="areas" src="areas.png" alt="Фото графика"></td>    <!-- график -->
             
             <td>
-                <form name="input_coordinates" method="post" action=""> <!-- координаты -->
+                <form name="input_coordinates" method="post" onsubmit="return validate();" action=""> <!-- координаты -->
 
                     <p><b>Выберите координату Х:</b><br>
-                        <input type="radio" name="x" value="-2"> -2<br>
-                        <input type="radio" name="x" value="-1.5"> -1.5<br>
-                        <input type="radio" name="x" value="-1"> -1<br>
-                        <input type="radio" name="x" value="0.5"> -0.5<br>
-                        <input type="radio" name="x" value="0"> 0<br>
-                        <input type="radio" name="x" value="0.5"> 0.5<br>
-                        <input type="radio" name="x" value="1"> 1<br>
-                        <input type="radio" name="x" value="1.5"> 1.5<br>
-                        <input type="radio" name="x" value="2"> 2<br>
+                        <input  type="radio" id="x" value="-2" > -2<br>
+                        <input  type="radio" id="x" value="-1.5"> -1.5<br>
+                        <input  type="radio" id="x" value="-1"> -1<br>
+                        <input  type="radio" id="x" value="0.5"> -0.5<br>
+                        <input  type="radio" id="x" value="0"> 0<br>
+                        <input  type="radio" id="x" value="0.5"> 0.5<br>
+                        <input  type="radio" id="x" value="1"> 1<br>
+                        <input  type="radio" id="x" value="1.5"> 1.5<br>
+                        <input  type="radio" id="x" value="2"> 2<br>
+                        
                     </p>
 
                     <p><b>Введите координату Y:</b><br>
-                        <input type="text" size="19">
+                        <input required type="text" id="y" size="19" placeholder="От -5 до 5."  >
+                        
                     </p>
                     
                     <p><b>Введите параметр R:</b><br>
-                        <input type="text" size="19">
+                        <input required type="text" id="R" size="19" placeholder="От 2 до 5." >
+                        
                     </p>
+                    <button type="submit">Подтвердить</button>
 
                 </form>
             </td>   
@@ -77,5 +81,9 @@
 
 
     </table>
+
+
+
+    <script src="C:\Users\demel\OneDrive\Рабочий стол\lab1_web\validation.js" ></script>
 </body>
 </html>
