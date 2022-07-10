@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"><!-- подключение css -->
+    <link rel="stylesheet" href="style.css">    <!-- подключение css -->
+    
     <title>LAB-1-WEB</title>
 </head>
 <body>
@@ -27,31 +28,40 @@
             <td> <img class="areas" src="areas.png" alt="Фото графика"></td>    <!-- график -->
             
             <td>
-                <form name="input_coordinates" method="post" onsubmit="return validate();" action=""> <!-- координаты -->
+                <form class="validate_form"  > <!-- координаты -->
 
-                    <p><b>Выберите координату Х:</b><br>
-                        <input  type="radio" id="x" value="-2" > -2<br>
-                        <input  type="radio" id="x" value="-1.5"> -1.5<br>
-                        <input  type="radio" id="x" value="-1"> -1<br>
-                        <input  type="radio" id="x" value="0.5"> -0.5<br>
-                        <input  type="radio" id="x" value="0"> 0<br>
-                        <input  type="radio" id="x" value="0.5"> 0.5<br>
-                        <input  type="radio" id="x" value="1"> 1<br>
-                        <input  type="radio" id="x" value="1.5"> 1.5<br>
-                        <input  type="radio" id="x" value="2"> 2<br>
-                        
-                    </p>
+                    <div><b>Выберите координату Х:</b><br>
+                        <input  type="radio" name="x_coordinate" class="x" value="-2" > -2<br>
+                        <input  type="radio" name="x_coordinate" class="x" value="-1.5"> -1.5<br>
+                        <input  type="radio" name="x_coordinate" class="x" value="-1"> -1<br>
+                        <input  type="radio" name="x_coordinate" class="x" value="0.5"> -0.5<br>
+                        <input  type="radio" name="x_coordinate" class="x" value="0" checked> 0<br> <!-- выбран по дефолту-->
+                        <input  type="radio" name="x_coordinate" class="x" value="0.5"> 0.5<br>
+                        <input  type="radio" name="x_coordinate" class="x" value="1"> 1<br>
+                        <input  type="radio" name="x_coordinate" class="x" value="1.5"> 1.5<br>
+                        <input  type="radio" name="x_coordinate" class="x" value="2"> 2<br>  
+                    </div>
 
-                    <p><b>Введите координату Y:</b><br>
-                        <input required type="text" id="y" size="19" placeholder="От -5 до 5."  >
-                        
-                    </p>
+                    <div>
+                        <div>
+                            <b>Введите координату Y:</b>
+                        </div>
+                        <div>
+                            <input type="text" class="y field" size="19" placeholder="От -5 до 5."  >
+                        </div>
+                    </div>
                     
-                    <p><b>Введите параметр R:</b><br>
-                        <input required type="text" id="R" size="19" placeholder="От 2 до 5." >
-                        
-                    </p>
-                    <button type="submit">Подтвердить</button>
+                    <div>
+                        <div>
+                            <b>Введите параметр R:</b>
+                        </div>
+                        <div>
+                            <input type="text" class="R field" size="19" placeholder="От 2 до 5." >
+                        </div>
+                    </div>
+
+                    <br><input type="submit" class="validate_button" value='Подтвердить'/>
+                
 
                 </form>
             </td>   
@@ -83,7 +93,6 @@
     </table>
 
 
-
-    <script src="C:\Users\demel\OneDrive\Рабочий стол\lab1_web\validation.js" ></script>
-</body>
+    <script src="validation.js" ></script>  <!-- подключение js -->
+   </body>
 </html>
